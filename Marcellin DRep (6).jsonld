@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Marcellin DRep",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://pbs.twimg.com/profile_images/1941414836262350848/0gHjJ9tv_400x400.jpg",
+      "sha256": "121e2dc679bde2cbc7a74dd99f69c22eaa81236ec75a1c8aa2e6b84a52903888"
+    },
+    "motivations": "I want to become a DRep (Regional Development Representative) to amplify the voices of my entire community.",
+    "objectives": "Fighting for more participatory governance",
+    "paymentAddress": "addr_test1qzqqgeq59pq4nawar6qv6sufrw4t828sn5fedtwmrfzl9tha6hl00d0fhtwak59ujulwftaxzjp5lwwy7aqzy0guy2ys9tevzx",
+    "qualifications": "Beyond being a sustainable development technician, I am very passionate about the environment and Web 3D technology.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Compt X",
+        "uri": "https://x.com/marcellinm75999?s=21"
+      }
+    ]
+  }
+}
